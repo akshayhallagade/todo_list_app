@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  --item-height: 100%;
+  --item-radius: 3px;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  height: max-content;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(aqua, blue);
+}
+.card {
+  width: 400px;
+  /* height: 500px; */
+  font-weight: 400;
+  background-color: aliceblue;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: var(--item-radius);
+}
+h1 {
+  margin-bottom: 15px;
+}
+.create {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(61, 60, 60);
+}
+.create input {
+  width: 85%;
+  background-color: rgba(255, 0, 0, 0);
+  border-color: grey;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  float: left;
+  border-radius: var(--item-radius);
+}
+.create #addElement {
+  padding: 8px 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--item-radius);
+  background-color: red;
+}
+.create #delete {
+  padding: 5px 12px;
+  height: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--item-radius);
+  background-color: red;
+  position: absolute;
+  right: 0;
+}
+ul {
+  list-style: none;
+  padding: 20px 0;
+}
+li {
+  background-color: rgba(181, 188, 212, 0.566);
+  margin-top: 10px;
+  border-radius: var(--item-radius);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  color: rgb(54, 54, 54);
+  position: relative;
+}
+.footer {
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer a {
+  width: 100px;
+  text-align: center;
+}
+.footer #clearAll {
+  padding: 3px 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: var(--item-radius);
+  outline: none;
+  border: none;
+  display: none;
+}
